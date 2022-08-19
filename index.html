@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Форум-слёт СНО</title>
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>logo</span>
+        </div>
+        <div id ="about">
+            <a href="#" title="Программа мероприятий" onclick="slowScroll('#main')">Программа мероприятий</a>
+            <a href="#" title="Регистрация" onclick="slowScroll('#main')">Регистрация</a>
+            <a href="#" title="Формат участия" onclick="slowScroll('#main')">Формат участия</a>
+            <a href="#" title="Условияzzzz" onclick="slowScroll('#main')">Условия</a>
+        </div>
+    </header>
+
+    <div id="top">
+        <h1>Международный молодёжный Форум-слёт СНО </h1>
+        <h3>Целью Международного молодёжного Форума-слёта студенческих научных обществ является организация и проведение коммуникационной площадки для встречи представителей активной молодежи вузов, ведущих научную, инновационную, предпринимательскую деятельность, в рамках реализации гранта Минобрнауки на создание и развитие СНО.</h3>
+    </div>
+
+    <div id="partners">
+        <div class="intro">
+            <h2>Программа мероприятия:</h2>
+            <button id="download" class="btn">Скачать программу <br>мероприятия</button>
+            <span></span>
+        </div>
+        <div class="text">
+            <span><ul>
+                <li>Научно-популярное шоу «Антинаука»</li>
+                <li>Интерактивная выставка молодежной науки и инноваций. Презентация СНО.</li>
+                <li>Форсайт-сессия: деятельность СНО, проблемы привлечения студентов, перспективы сотрудничества.</li>
+                <li>«Квадратный стол» (образование, наука, бизнес, административное управление)</li>
+                <li>Программа «Учёный говорит»  </li>
+                <li>Предпринимательская игра «Денежный поток» </li>
+                <li>Мастер-класс. Применение инструментов патентной аналитики для технологического развития стартапа.</li>
+                <li>Питчинг по технологическому предпринимательству / Конференция по представленным докладам.</li>
+                </ul></span>
+        </div>
+    </div>
+
+    <div id="program">
+        <h2>Программа мероприятия</h2>
+        <h4>dgdff</h4>
+        <div class="list-program">
+
+        </div>
+    </div>
+
+    <div id="partners">
+        <div class="intro">
+            <h2>К участию приглашаются</h2>
+            <span>студенты, магистранты (18+), являющиеся представителями СНО своего вуза и их кураторы.</span>
+        </div>   
+        <div class="text">
+            <span>Регистрация открыта до 05 сентября</span>
+            <div id="url_reg" class="btn">Регистрация</div>
+        </div>
+        
+    </div>
+
+
+    <div id="contacts">
+        <center><h5>Обратная связь</h5></center>
+            
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id){
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function (){
+            if($(window).scrollTop()===0){
+                $("header").removeClass("fixed");
+            } else {
+                $("header").attr("class", "fixed");
+            }
+        });
+    </script>
+
+
+
+
+    
+</body>
+</html>
