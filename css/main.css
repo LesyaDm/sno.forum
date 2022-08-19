@@ -55,12 +55,12 @@ header #logo span{
     }
     #top{
         width: 100%;
-        height: 100%;
+        height: 700px;
     }
     #top h1{
         padding-top: 15%;
         margin: 0 5%;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
     #top h3{ font-size: 0.8em; }
 }
@@ -122,7 +122,7 @@ header #logo span{
     #top h1{
         padding-top: 10%;
         font-size: 1.7em;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 }
 #about {
@@ -176,7 +176,7 @@ header.fixed #logo{
 }
 
 
-#partners {
+#program {
     float: left;
     background-color: #f6f6f6;
     border-top: 2px solid silver;
@@ -185,36 +185,39 @@ header.fixed #logo{
 }
 
 @media(min-width: 1401px){
-    #partners {
+    #program {
         padding: 100px 20%;
         width: 60%;
     }
 }
 
 @media(max-width: 1400px){
-    #partners{
+    #program{
         padding: 100px 10%;
         width: 80%;
     }
 }
 
 @media(max-width: 700px){
-    #partners div{
+    #program div{
         width: 98% !important;
         margin-bottom: 20px;
     }
+    .btn{
+        margin: 20px 0 !important;
+    }
 }
-#partners div{
+#program div{
     width: 48%;
     margin-right: 2%;
     float: left;
 }
 
-#partners h2 {font-size: 2em;}
-#partners span {color: #585858;}
+#program h2 {font-size: 2em;}
+#program span {color: #585858;}
 
 
-#program{
+#program22{
     float: left;
     background-image: url(../img/img2.jpg);
     background-blend-mode: multiply;
@@ -227,8 +230,8 @@ header.fixed #logo{
     color: #fff;
 }
 
-#program h2 {font-size: 2em;}
-#program h4 {color: #a0a0a0;}
+#program22 h2 {font-size: 2em;}
+#program22 h4 {color: #a0a0a0;}
 
 ul {
     list-style-type: disc;
@@ -278,6 +281,7 @@ li{
 }
 
 .btn{
+
     float: left;
     border: 0;
     margin: 50px 0;
