@@ -344,13 +344,12 @@ header #logo{
 
 .logo_znanie{
     border-radius: 35%;
-    -webkit-border-radius: 35%;
-    -moz-border-radius: 35%;
     max-width: 135px !important;
-    background-color: #fff;
-    outline: 2px solid black;
-    outline-offset: -1px; 
+    background-color: #fff; 
+    border: 2px solid black;
 }
+
+
 
 .logo_uz{
     max-width: 220px !important;
