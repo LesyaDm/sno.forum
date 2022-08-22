@@ -50,7 +50,7 @@ header #logo{
 #link{
     border-top: 150px solid transparent;
 	margin-top: -150px;
-	/* padding: 15px; паддинги - без проблем */
+	padding: 15px; /* паддинги - без проблем */
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
@@ -286,7 +286,7 @@ header #logo{
         margin: 20px 0 !important;
     }
     #program .text span {
-        /* margin: 0 !important; */
+        margin: 0 !important;
     }
     #partners .img{
         align-items: center;
