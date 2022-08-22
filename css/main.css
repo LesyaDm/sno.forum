@@ -250,7 +250,7 @@ header #logo{
 
 @media(min-width: 1401px){
     #program {
-        padding: 100px 20%;
+        padding: 100px 20% 50px;
         width: 60%;
     }
     #partners .img{
@@ -340,16 +340,14 @@ header #logo{
     float: left;
     width: 100%;
     max-width: 150px;
+    -webkit-filter: drop-shadow(3px 5px 5px #000);
+    filter: drop-shadow(0px 0px 4px #fff);
 }
 
 .logo_znanie{
-    border-radius: 35%;
     max-width: 135px !important;
-    background-color: #fff; 
-    /* border: 2px solid black; */
+    filter: drop-shadow(0px 0px 0px #fff) !important;
 }
-
-
 
 .logo_uz{
     max-width: 220px !important;
@@ -374,9 +372,45 @@ li{
     margin-bottom: 20px;
  }
 
+#participants{
+    background-color: #f6f6f6;
+    float: left;
+    padding: 0 0 50px 0;
+    width: 100%;
+    text-align: center;
+    color: #4f4f4f;
+ }
+#participants h2{
+    font-size: 3em;
+    margin: 30px 0 20px;
+ }
+#participants .litle_h4{
+    font-size: 1.2em;
+    margin: 0 20%;
+ }
+#participants h4{
+    font-size: 1.4em;
+    margin: 0 20%;
+ }
+#participants ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1.5em;
+ }
+#participants li{
+    line-height: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+ }
 
+#participants a{
+    color: #4f4f4f;
+}
 
-
+#participants a:hover{
+    color: #acacac;
+    text-decoration: underline;
+}
 
 
 #contacts{
