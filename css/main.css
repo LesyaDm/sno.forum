@@ -47,6 +47,16 @@ header #logo{
     margin: 0 10px 10px;
 }  
 
+#link{
+    border-top: 150px solid transparent;
+	margin-top: -150px;
+	padding: 15px; /* паддинги - без проблем */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+
 #logo1{
     background-image: url(../img/logo1.png);
     background-repeat: no-repeat;
@@ -290,7 +300,7 @@ header #logo{
     }
 }
 #program div{
-    width: 48%;
+    width: 47%;
     margin-right: 2%;
     float: left;
 }
@@ -300,10 +310,46 @@ header #logo{
     color: #585858;
 }
 #program .text span {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 20px;
     float: left;
+    position: relative;
 }
 
+#program .text{
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgb(247 97 64);;
+    gap: 20px;
+}
+
+.programList{
+    width: 100% !important;
+    padding-left: min(16px, max(8px, 5.18px + 0.75vw));
+    position: relative;
+}
+.programList div:not(.point){
+    width: 100% !important;
+    padding: 1px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.programList div:not(.point):hover{
+    border: 1px solid rgb(247 97 64);
+}
+
+.point{
+    height: 1rem;
+    width: 1rem !important;
+    background: rgb(247 97 64);
+    position: absolute;
+    left: -0.5rem;
+    border-radius: 50%;
+}
 .text #reg{
     margin: 20px 0;
 }
@@ -341,7 +387,7 @@ header #logo{
     width: 100%;
     max-width: 150px;
     -webkit-filter: drop-shadow(3px 5px 5px #000);
-    filter: drop-shadow(0px 0px 4px #fff);
+    filter: drop-shadow(0px 0px 4px #000);
 }
 
 .logo_znanie{
@@ -359,18 +405,6 @@ header #logo{
     font-size: 1.4em;
     margin: 0 0 0 5%;
 }
-
-ul {
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
- }
-li{
-    line-height: 30px;
-    margin-bottom: 20px;
- }
 
 #participants{
     background-color: #f6f6f6;
@@ -393,7 +427,6 @@ li{
     margin: 0 20%;
  }
 #participants ul {
-    list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1.5em;
  }
@@ -401,7 +434,16 @@ li{
     line-height: 30px;
     margin-bottom: 15px;
     text-align: left;
+    list-style-type: none;
  }
+
+#participants li:before {
+    color: #f76140; /* Цвет маркера */
+    content: "•"; /* Сам маркер */
+    line-height: 10px;
+    padding-right: 15px;
+    font-size: 100%;
+}
 
 #participants a{
     color: #4f4f4f;
@@ -424,7 +466,7 @@ li{
 
 
 #contacts h5{
-    font-size: 3em;
+    font-size: 2.5em;
     color: #4f4f4f;
 }
 
