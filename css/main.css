@@ -280,7 +280,7 @@ header #logo{
 @media(max-width: 700px){
     #program div:not(.point){
         width: 98% !important;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
     .btn{
         margin: 20px 0 !important;
