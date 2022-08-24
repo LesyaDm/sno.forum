@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
     <title>Форум-слёт СНО</title>
 </head>
 <body>
@@ -15,21 +16,21 @@
             <div id="logo3"></div>
         </div>
         <div id ="about">
-            <a href="#Progpam" title="Программа мероприятий" onclick="slowScroll('#main')">Программа мероприятий</a>
-            <a href="#Partners" title="Партнеры" onclick="slowScroll('#main')">Партнеры</a>
-            <a href="#Registration" title="Регистрация" onclick="slowScroll('#main')">Регистрация</a>
-            <a href="#Format" title="Формат участия" onclick="slowScroll('#main')">Формат участия</a>
-            <a href="#Conditions" title="Условия" onclick="slowScroll('#main')">Условия</a>
-            <a href="#Contacts" title="Контакты" onclick="slowScroll('#main')">Контакты</a>
+            <a title="Программа мероприятий" onclick="slowScroll('#program')">Программа мероприятий</a>
+            <a title="Партнеры" onclick="slowScroll('#partners')">Партнеры</a>
+            <a title="Регистрация" onclick="slowScroll('#registration')">Регистрация</a>
+            <a title="Формат участия" onclick="slowScroll('#participants')">Формат участия</a>
+            <a title="Условия" onclick="slowScroll('#conditions')">Условия</a>
+            <a title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
         </div>
     </header>
 
     <div id="top">
-        <h1>Международный молодёжный Форум-слёт СНО </h1>
+        <h1>Международный молодежный Форум-слет СНО </h1>
         <h3>Целью Международного молодёжного Форума-слёта студенческих научных обществ является организация и проведение коммуникационной площадки для встречи представителей активной молодежи вузов, ведущих научную, инновационную, предпринимательскую деятельность, в рамках реализации гранта Минобрнауки на создание и развитие СНО.</h3>
     </div>
     
-    <div id="program"><a id="link" name="Progpam"></a>
+    <div id="program">
         <div class="intro">
             <h2>Программа мероприятия:</h2>
             <button id="download" class="btn" onclick="window.location.href ='resources/Programma_Foruma.docx'" download>Скачать программу <br>мероприятия</button>
@@ -62,11 +63,11 @@
         </div>
     </div>
     
-    <div id="partners"><a id="link" name="Partners"></a>
+    <div id="partners">
         <h2>Партнеры мероприятия:</h2>
         
         <div class="img">
-            <a href="https://pharmi.uz/" target="_blank"><img src="img/logo_uz.png" class="logo_uz"></a>
+            <a href="https://pharmi.uz/" target="_blank"><img src="img/logo_uz2.png" class="logo_uz"></a>
             <span>Ташкентский фармацевтический институт</span>
         </div>
         <div class="img">
@@ -81,8 +82,8 @@
         </div>
     </div>
 
-    <div id="program"><a id="link" name="Registration"></a>
-        <div class="intro" style="margin: 10px;">
+    <div id="program" class="registration">
+        <div id="registration" class="intro" style="margin: 10px;">
             <h2>К участию приглашаются</h2>
             <span>студенты, магистранты (18+), являющиеся представителями СНО своего вуза и их кураторы.</span>
         </div>   
@@ -93,9 +94,9 @@
     </div>
     
     <div id="participants">
-        <h2><a id="link" name="Format"></a>Формат участия</h2>
-        <h4 class="litle_h4">Форум проводится в гибридном формате: все участники приглашаются в Белгород, но, если по какой-то причине это невозможно, нами предусмотрена возможность онлайн-участия.<br><br>
-        </h4><h4>Вы также можете самостоятельно определить удобный для вас формат:<br>
+        <h2>Формат участия</h2>
+        <h4>Форум проводится в гибридном формате: все участники приглашаются в Белгород, но, если по какой-то причине это невозможно, нами предусмотрена возможность онлайн-участия.<br><br>
+        Вы также можете самостоятельно определить удобный для вас формат:<br>
             <span> 
                 <ul>
                     <li>Участие во всех активностях Форума в очном формате</li>
@@ -107,9 +108,9 @@
         
         </h4>
         
-        <h2>Условия участия<a id="link" name="Conditions"></a></h2>
-        <h4 class="litle_h4">Принимающая сторона оплачивает проживание в оздоровительном комплексе <a href="https://bsuedu.ru/bsu/info/structure/detail.php?ID=216653">«Нежеголь»</a> и трех разовое питание. Оздоровительный комплекс «Нежеголь» расположен в смешанном лесу на берегу реки «Нежеголь», недалеко от поселка Титовка Шебекинского района Белгородской области. Трансфер будет обеспечен. <br><br>
-        </h4><h4>Направления работы Конференции:<br>
+        <h2 id="conditions">Условия участия</h2>
+        <h4>Принимающая сторона оплачивает проживание в оздоровительном комплексе <a href="https://bsuedu.ru/bsu/info/structure/detail.php?ID=216653">«Нежеголь»</a> и трех разовое питание. Оздоровительный комплекс <a href="https://bsuedu.ru/bsu/info/structure/detail.php?ID=216653">«Нежеголь»</a> расположен в смешанном лесу на берегу реки <a href="https://bsuedu.ru/bsu/info/structure/detail.php?ID=216653">«Нежеголь»</a>, недалеко от поселка Титовка Шебекинского района Белгородской области. Трансфер будет обеспечен. <br><br>
+        Направления работы Конференции:<br>
             <span> 
                 <ul>
                     <li>Естественные науки</li>
@@ -131,17 +132,33 @@
     </div>
 
 
-    <div id="contacts"><a id="link" name="Contacts"></a>
-        <center><h5>Контактные данные оргкомитета</h5></center>
-            <span>Контактные данные оргкомитета:
-                NIRS@bsu.edu.ru, (4722) 30-13-00 * 21-10, Павлюк Ярослава Валерьевна, начальник отдела научной и инновационной работы студентов и молодых учёных департамента научно-исследовательской работы</span>
+    <div id="contacts">
+        <h5>Контактные данные оргкомитета</h5>
+            <div>
+                <a href="mailto:NIRS@bsu.edu.ru">
+                    <pre class="material-symbols-outlined">mail</pre>
+                    NIRS@bsu.edu.ru
+                </a>
+                
+                
+                <a href="tel:+74722301300">
+                    <pre class="material-symbols-outlined">call</pre>
+                    +7 (4722) 30-13-00 
+                </a>
+                <a href="tel:+74722302110">
+                    <pre class="material-symbols-outlined">call</pre>
+                    +7 (4722) 30-21-10 
+                </a>
+                <span>
+                Павлюк Ярослава Валерьевна, начальник отдела научной и инновационной работы студентов и молодых учёных департамента научно-исследовательской работы</span>
+            </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         function slowScroll(id){
             $('html, body').animate({
-                scrollTop: $(id).offset().top
+                scrollTop: $(id).offset().top - 200
             }, 500);
         }
 
