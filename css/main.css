@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300;400&display=swap');
-@import url('../fonts/RedOctober/stylesheet.css');
 @import url('../fonts/Avenir/stylesheet.css');
 
 *{
@@ -282,6 +281,7 @@ header #logo{
     }
     .intro #download{
         position: relative;
+        margin: 50px 5%;
         left: 0;
         transform: translate(0, 0);
     }
@@ -580,18 +580,25 @@ header #logo{
 
 
 #contacts{
-    background-image: url(../img/bgForPhone.png);
+    /* background-image: url(../img/bgForPhone.png);
     background-blend-mode: multiply;
     background-color:#484848;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     text-align: center;
     color: #fff;
     width: 100%;
     float: left;
     padding-bottom: 40px;
     padding-top: 50px;
-    border-top: 4px solid silver;
+    border-top: 4px solid silver; 
+    background-image: url(../img/bgForPhone.png);*/
+    background-blend-mode: multiply;
+    background-color: #484848;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    text-align: center;
+    color: #fff;
 }
 
 #contacts h5{
