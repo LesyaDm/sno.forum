@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300;400&display=swap');
+@import url('../fonts/Avenir/stylesheet.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1,h2,h5{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3,h4,span{
+    font-family: 'Avenir',sans-serif;
+    font-weight: lighter;
+}
+
+header{
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+header a{
+    font-size: 20px;
+    font-family: 'Avenir', sans-serif;;
+}
+
+header #logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    width: 45%;
+}
+
+ header #logo div{
+    width: 114px;
+    line-height: 45px;
+    margin: 0 10px 10px;
+}  
+
+#link{
+    border-top: 150px solid transparent;
+	margin-top: -150px;
+	/* padding: 15px; паддинги - без проблем */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+
+#logo1{
+    background-image: url(../img/logo1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 40px;
+}
+#logo2{
+    background-image: url(../img/logo2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 95px;
+}
+#logo3{
+    background-image: url(../img/logo3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 47px;
+}
+
+@media (min-width: 700px) {
+    #logo{
+        float:left;
+        width: 50% !important;
+        font-size: 1.1em;
+    }
+    
+    #about{
+        float: right;
+        width: 50% !important;
+        margin: 0;
+    }
+    #top{
+        width: 100%;
+        height: 700px;
+    }
+    #top h1{
+        padding-top: 25%;
+        margin: 0 5%;
+        padding-bottom: 40px;
+    }
+    #top h3{ 
+        font-size: 25px; 
+    }
+    .intro #download{
+        position: relative;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    h1,h2,h5{
+        font-size: 35px !important;
+    }
+    h3,h4,span, .btn{
+        font-size: 25px !important;
+    }
+    .btn{
+        width: 250px !important;
+    }
+    #participants h4 {
+        margin: 0px 5% !important;
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 700px) and (min-width:401px){
+    #logo{
+        margin-top: 15px;
+        width: 100% !important;
+        font-size: 1.4em;
+    }
+    
+    #about{
+        float: left;
+        width: 100% !important;
+    }
+    #top{
+        width: 100%;
+        height: 900px;
+    }
+    #top h1{
+        padding-top: 45%;
+        font-size: 1.5em;
+        margin: 0 5%;
+        padding-bottom: 30px;
+    }
+    #top h3{ font-size: 25px; 
+    }
+
+    .btn{
+        width: 275px !important;
+    }
+    #participants h4 {
+        margin: 0px 5% !important;
+        text-align: left !important;
+    }
+    #contacts h5{
+        font-size: 25px !important;
+    }
+    
+    #contacts span{
+        font-size: 20px !important;
+        margin: 10px 10% !important;
+    }
+
+    
+    a[href^="mailto:"] {
+        font-size: 23px !important;
+    }
+    a[href^="tel:"]{
+        font-size: 23px !important;
+    }
+}
+
+@media (max-width: 600px) and (min-width:401px){
+    #top{
+        height: 1000px;
+    }
+    #top h1{
+        padding-top: 65%;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    h3,h4,span, .btn{
+        font-size: 20px !important;
+    }
+    h1,h2,h5{
+        font-size: 30px !important;
+    }
+
+    #logo{
+        margin-top: 15px;
+        width: 100% !important;
+        font-size: 1.5em;
+    }
+    
+    #about{
+        float: left;
+        width: 100% !important;
+    }
+    #top h1{
+        padding-top: 70%;
+        margin: 0 5%;
+        padding-bottom: 20px;
+    }
+    header a{
+        font-size: 16px;
+    }
+    #top{
+        width: 100%;
+    }
+
+    #top h3{
+        margin-bottom: 15px;
+    }
+    .btn{
+        width: 205px !important;
+    }
+
+    #participants h4 {
+        margin: 0px 5% !important;
+        text-align: left !important;
+    }
+
+    #contacts h5{
+        font-size: 20px !important;
+    }
+    
+    #contacts span{
+        font-size: 13px !important;
+        margin: 10px 10% !important;
+    }
+
+    
+    a[href^="mailto:"] {
+        font-size: 13px !important;
+    }
+    a[href^="tel:"]{
+        font-size: 13px !important;
+    }
+}
+
+@media (min-width: 900px) {
+    #about {
+        float: right;
+        width: 45% !important;
+        margin: 0 4%;
+    }
+    #about > a {
+        margin-top: 10px;
+    }
+
+    #logo{
+        width: 40% !important;
+        margin-left: 4%;
+    }
+    #top{
+        background-image: url(../img/4bg.png) !important;
+        background-attachment: fixed;
+    }
+    #partners{
+        background-image: url(../img/4bg.png) !important;
+        background-attachment: fixed;
+    }
+    #contacts{
+        background-image: url(../img/4bg.png) !important;
+        background-attachment: fixed;
+    }
+    #top h1{
+        padding-top: 15%;
+        font-size: 1.7em;
+        padding-bottom: 40px;
+    }
+    #top h3{ 
+        font-size: 25px; 
+    }
+    .intro #download{
+        position: relative;
+        margin: 50px 5%;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    h1,h2,h5{
+        font-size: 40px !important;
+    }
+    h3,h4,span, .btn{
+        font-size: 27px !important;
+    }
+    .btn{
+        width: 300px !important;
+    }
+    #participants h4{
+        font-size: 30px !important;
+        margin: 0 20% !important;
+        text-align: justify !important;
+     }
+
+     #contacts h5{
+        font-size: 30px !important;
+    }
+    
+    #contacts span{
+        font-size: 20px !important;
+        margin: 10px 10% !important;
+        width: 750px;
+    }
+
+    a[href^="mailto:"] {
+        font-size: 23px !important;
+    }
+    a[href^="tel:"]{
+        font-size: 23px !important;
+    }
+}
+#about {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+#about > a{
+    color: #fff;
+    white-space: nowrap
+}
+
+#about > a:hover{
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+
+#about >a:not(:last-child){
+    margin-right: 5%;
+}
+#about >a:last-child{
+    margin-left: 5%;
+}
+
+.fixed{
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+.fixed #logo1{
+    background-image: url(../img/logoBlack1.png);
+}
+.fixed #logo2{
+    background-image: url(../img/logoBlack2.png);
+}
+.fixed #logo3{
+    background-image: url(../img/logoBlack3.png);
+}
+
+.fixed #about a{ color: #343434;}
+.fixed #about a:hover{ color: #7c7c7c;}
+
+#top{
+    background-image: url(../img/bgForPhone.png);
+    background-blend-mode: multiply;
+    background-color:#484848;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+#top h3{
+    color: #ccc;
+    margin: 0 10%;
+}
+
+
+#program {
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 25px;
+}
+
+@media(min-width: 1401px){
+    #program {
+        padding: 100px 20% 50px !important;
+        width: 60% !important;
+    }
+    #partners .img{
+        width: 50% !important;
+        margin: 0px 25% 50px 25% !important;
+    }
+}
+
+@media(max-width: 1400px){
+    #program{
+        padding: 50px 10% 40px !important;
+        width: 80% !important;
+    }
+
+}
+
+@media(max-width: 700px){
+    #program div:not(.point){
+        width: 98% !important;
+        /* margin-bottom: 20px; */
+    }
+    .btn{
+        margin: 20px 0 !important;
+    }
+    #program .text span {
+        /* margin: 0 !important; */
+    }
+    #partners .img{
+        align-items: center;
+        flex-direction: column;
+    }
+    #partners span{
+        margin: 15px 0 0 0 !important;
+    }
+    #partners h2 {
+        margin-bottom: 40px !important;
+    }
+}
+#program div:not(.point){
+    width: 47%;
+    margin-right: 2%;
+    float: left;
+}
+
+.registration{
+    padding: 50px 5% 40px !important;
+    width: 90% !important;
+}
+
+#program h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#program span {
+    color: #585858;
+}
+#program .text span {
+    margin: 10px 10px 10px 20px;
+    float: left;
+    position: relative;
+}
+
+#program .text{
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgb(247 97 64);;
+    gap: 20px;
+}
+
+.programList{
+    width: 100% !important;
+    padding-left: min(16px, max(8px, 5.18px + 0.75vw));
+    position: relative;
+}
+.programList div:not(.point){
+    width: 100% !important;
+    padding: 1px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.programList div:not(.point):hover{
+    border: 1px solid rgb(247 97 64);
+}
+
+.point{
+    height: 1rem;
+    width: 1rem !important;
+    background: rgb(247 97 64);
+    position: absolute;
+    left: -0.5rem;
+    border-radius: 50%;
+}
+.text #reg{
+    margin: 20px 0;
+}
+
+#partners{
+    float: left;
+    background-image: url(../img/bgForPhone.png);
+    background-blend-mode: multiply;
+    background-color: #484848;
+    background-size: cover; 
+    /* background-attachment: fixed; */
+    padding: 50px 0 0 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#partners h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#partners .img{
+    /* float: left; */
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 5% 50px 5%;
+}
+
+#partners img{
+    /* background: #fafafa0a; */
+    /* padding: 5%; */
+    float: left;
+    width: 100%;
+    max-width: 150px;
+    -webkit-filter: drop-shadow(3px 5px 5px #000);
+    filter: drop-shadow(0px 0px 4px #000);
+}
+
+#partners span{
+    float: right;
+    width: 100%;
+    font-size: 25px;
+    margin: 0 0 0 5%;
+}
+
+#participants{
+    background-color: #f6f6f6;
+    float: left;
+    padding: 0 0 50px 0;
+    width: 100%;
+    text-align: center;
+    color: #4f4f4f;
+ }
+#participants h2{
+    font-size: 40px;
+    margin: 70px 0 20px;
+ }
+
+
+#participants ul {
+    margin-block-start: 1em;
+    margin-block-end: 1.5em;
+ }
+#participants li{
+    line-height: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+    list-style-type: none;
+ }
+
+#participants li:before {
+    color: #f76140; /* Цвет маркера */
+    content: "•"; /* Сам маркер */
+    line-height: 10px;
+    padding-right: 15px;
+    font-size: 100%;
+}
+
+#participants a{
+    color: #4f4f4f;
+}
+
+#participants a:hover{
+    color: #acacac;
+    text-decoration: underline;
+}
+
+
+#contacts{
+    background-image: url(../img/bgForPhone.png);
+    background-blend-mode: multiply;
+    background-color:#484848;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    border-top: 4px solid silver;
+}
+
+#contacts h5{
+    font-size: 40px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+#contacts span{
+    font-size: 25px;
+    margin: 0 20%;
+    float: left;
+    color: #fff;
+}
+#contacts >div{
+    display: flex;
+    flex-direction: column;
+    /* align-content: stretch; */
+    align-items: center;
+}
+
+a[href^="mailto:"] {
+    font-size: 25px;
+    color: #fff;
+}
+
+a[href^="mailto:"] pre {
+    font-size: 15px;
+}
+
+a[href^="tel:"] pre {
+    font-size: 15px;
+}
+
+a[href^="tel:"]{
+    font-size: 25px;
+    color: #fff;
+}
+
+.btn{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    float: left;
+    border: 0;
+    margin: 50px 0;
+    width: 70%;
+    height: 90px;
+    border-radius: 5px;
+    font-size: 100%;
+    color:#2b2b2b;
+    background-color: #f72e01be;
+    cursor: pointer;
+    font-family: 'Avenir', sans-serif;
+    white-space: nowrap;
+    
+}
+@media (hover: hover) {
+    .btn:hover{
+        background-color: #f73001;
+    }
+}
+
+@media (hover: none) {
+    .btn:active{
+        background-color: #f73001;
+    }
+}
