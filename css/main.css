@@ -580,10 +580,11 @@ header #logo{
 
 
 #contacts{
-    background-image: url(../img/bgForPhone.png);
+    /* background-image: url(../img/bgForPhone.png); */
     background-blend-mode: multiply;
     background-color:#484848;
-    background-size: cover;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
     /* background-attachment: fixed; */
     text-align: center;
     color: #fff;
@@ -591,7 +592,7 @@ header #logo{
     float: left;
     padding-bottom: 40px;
     padding-top: 50px;
-    border-top: 4px solid silver;
+    /* border-top: 4px solid silver; */
 }
 
 #contacts h5{
