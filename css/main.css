@@ -269,6 +269,7 @@ header #logo{
     }
     #contacts{
         background-image: url(../img/4bg.png) !important;
+        background-size: cover;
         background-attachment: fixed;
     }
     #top h1{
@@ -592,7 +593,7 @@ header #logo{
     float: left;
     padding-bottom: 40px;
     padding-top: 50px;
-    /* border-top: 4px solid silver; */
+    border-top: 4px solid silver;
 }
 
 #contacts h5{
