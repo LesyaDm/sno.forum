@@ -591,8 +591,8 @@ header #logo{
     float: left;
     padding-bottom: 40px;
     padding-top: 50px;
-    border-top: 4px solid silver; 
-    background-image: url(../img/bgForPhone.png);*/
+    border-top: 4px solid silver; */
+    background-image: url(../img/bgForPhone.png);
     background-blend-mode: multiply;
     background-color: #484848;
     background-size: cover;
